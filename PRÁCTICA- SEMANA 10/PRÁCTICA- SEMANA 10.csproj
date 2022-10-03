@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\EmpleadosBLL.cs" />
+    <Compile Include="BLL\SedesBLL.cs" />
+    <Compile Include="DAL\Database.cs" />
+    <Compile Include="empleadosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>empleadosDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PL\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +74,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
+    <None Include="empleadosDataSet.xsc">
+      <DependentUpon>empleadosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="empleadosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>empleadosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="empleadosDataSet.xss">
+      <DependentUpon>empleadosDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,9 +99,6 @@
   <ItemGroup>
     <None Include="PL\App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
