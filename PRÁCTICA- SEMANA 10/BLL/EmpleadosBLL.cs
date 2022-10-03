@@ -16,3 +16,4 @@ namespace PRÁCTICA__SEMANA_10.BLL
         public int Dui { get; set; }
     }
 }
+

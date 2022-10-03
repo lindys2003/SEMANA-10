@@ -34,7 +34,7 @@ namespace PRÁCTICA__SEMANA_10
             // 
             // btn_Test
             // 
-            this.btn_Test.Location = new System.Drawing.Point(73, 59);
+            this.btn_Test.Location = new System.Drawing.Point(84, 64);
             this.btn_Test.Name = "btn_Test";
             this.btn_Test.Size = new System.Drawing.Size(169, 108);
             this.btn_Test.TabIndex = 0;

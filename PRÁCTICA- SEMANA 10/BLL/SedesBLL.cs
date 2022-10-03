@@ -13,3 +13,4 @@ namespace PRÁCTICA__SEMANA_10.BLL
         public int Ubicacion { get; set; }
     }
 }
+
