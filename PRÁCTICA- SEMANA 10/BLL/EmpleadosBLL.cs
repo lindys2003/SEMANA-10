@@ -9,11 +9,11 @@ namespace PRÁCTICA__SEMANA_10.BLL
     class EmpleadosBLL
     {
         public int Id { get; set; }
-        public int Nombre { get; set; }
-        public int Apellidos { get; set; }
-        public int Email { get; set; }
-        public int Telefono { get; set; }
-        public int Dui { get; set; }
+        public string Nombre { get; set; }
+        public string Apellidos { get; set; }
+        public string Email { get; set; }
+        public string Telefono { get; set; }
+        public string Dui { get; set; }
     }
 }
 

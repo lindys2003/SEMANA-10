@@ -9,8 +9,8 @@ namespace PRÁCTICA__SEMANA_10.BLL
     class SedesBLL
     {
         public int Id { get; set; }
-        public int Nombre { get; set; }
-        public int Ubicacion { get; set; }
+        public string  Nombre { get; set; }
+        public string Ubicacion { get; set; }
     }
 }
 
