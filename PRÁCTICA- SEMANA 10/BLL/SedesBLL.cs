@@ -6,11 +6,27 @@ using System.Threading.Tasks;
 
 namespace PRÁCTICA__SEMANA_10.BLL
 {
-    class SedesBLL
+    public class SedesBLL
     {
-        public int Id { get; set; }
-        public string  Nombre { get; set; }
-        public string Ubicacion { get; set; }
+        private int id;
+        private string nombre;
+        private string ubicacion;
+
+        public SedesBLL(int id)
+        {
+            this.id = id;
+        }
+
+        public SedesBLL(int id, string nombre, string ubicacion)
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.ubicacion = ubicacion;
+        }
+
+        public int Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Ubicacion { get => ubicacion; set => ubicacion = value; }
     }
 }
 

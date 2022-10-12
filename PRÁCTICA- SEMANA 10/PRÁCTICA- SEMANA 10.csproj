@@ -49,6 +49,7 @@
     <Compile Include="BLL\EmpleadosBLL.cs" />
     <Compile Include="BLL\SedesBLL.cs" />
     <Compile Include="DAL\Database.cs" />
+    <Compile Include="DAL\EmpleadosDAL.cs" />
     <Compile Include="empleadosDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

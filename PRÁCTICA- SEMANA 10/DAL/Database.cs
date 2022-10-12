@@ -16,12 +16,29 @@ namespace PRÁCTICA__SEMANA_10.DAL
         {
             return Settings.Default.empleadosConnectionString;
         }
+
         public SqlConnection getConnection()
         {
-            SqlConnection Con = new SqlConnection();
+            SqlConnection Con = new SqlConnection(getStrConnection());
             return Con;
         }
 
+        public bool testConection()
+        {
+            SqlConnection Con = this.getConnection();
+            Con.Open();
+            if (Con.State == System.Data.ConnectionState.Open)
+            {
+                Con.Close();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
+        }
     }
 }
 
